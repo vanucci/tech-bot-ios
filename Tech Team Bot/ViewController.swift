@@ -12,15 +12,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet var table: UITableView!
     @IBOutlet var searchBar: UISearchBar!
     
-    @IBAction func numberBtn(_ sender: UIButton) {
-        guard let numberString = sender.titleLabel?.text, let url = URL(string:"telprompt://\(numberString)")
-            else {
-        return
-        }
-        
-        UIApplication.shared.open(url)
-    
-    }
+//    @IBAction func numberBtn(_ sender: UIButton) {
+//        guard let numberString = sender.titleLabel?.text, let url = URL(string:"telprompt://\(numberString)")
+//            else {
+//        return
+//        }
+//
+//        UIApplication.shared.open(url)
+//
+//   }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

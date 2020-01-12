@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		343C096323CB7DD8004F9B24 /* Robot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 343C096023CB7DD8004F9B24 /* Robot.jpg */; };
+		343C096423CB7DD8004F9B24 /* Robot@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 343C096123CB7DD8004F9B24 /* Robot@2x.jpg */; };
+		343C096523CB7DD8004F9B24 /* Robot@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 343C096223CB7DD8004F9B24 /* Robot@3x.jpg */; };
 		34A0711D22E658540045316B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A0711C22E658540045316B /* AppDelegate.swift */; };
 		34A0711F22E658540045316B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A0711E22E658540045316B /* ViewController.swift */; };
 		34A0712222E658540045316B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A0712022E658540045316B /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		343C096023CB7DD8004F9B24 /* Robot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Robot.jpg; sourceTree = "<group>"; };
+		343C096123CB7DD8004F9B24 /* Robot@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Robot@2x.jpg"; sourceTree = "<group>"; };
+		343C096223CB7DD8004F9B24 /* Robot@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Robot@3x.jpg"; sourceTree = "<group>"; };
 		34A0711922E658540045316B /* Tech Team Bot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tech Team Bot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A0711C22E658540045316B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34A0711E22E658540045316B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +68,9 @@
 				34A0712322E658550045316B /* Assets.xcassets */,
 				34A0712522E658550045316B /* LaunchScreen.storyboard */,
 				34A0712822E658550045316B /* Info.plist */,
+				343C096023CB7DD8004F9B24 /* Robot.jpg */,
+				343C096123CB7DD8004F9B24 /* Robot@2x.jpg */,
+				343C096223CB7DD8004F9B24 /* Robot@3x.jpg */,
 				34A0712E22E65E420045316B /* TableCell.swift */,
 			);
 			path = "Tech Team Bot";
@@ -125,9 +134,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343C096523CB7DD8004F9B24 /* Robot@3x.jpg in Resources */,
 				34A0712722E658550045316B /* LaunchScreen.storyboard in Resources */,
 				34A0712422E658550045316B /* Assets.xcassets in Resources */,
+				343C096323CB7DD8004F9B24 /* Robot.jpg in Resources */,
 				34A0712222E658540045316B /* Main.storyboard in Resources */,
+				343C096423CB7DD8004F9B24 /* Robot@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

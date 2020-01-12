@@ -79,7 +79,7 @@
                                                                     <rect key="frame" x="238.5" y="0.0" width="30" height="30"/>
                                                                     <state key="normal" title="Call"/>
                                                                     <connections>
-                                                                        <action selector="numberBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aUD-bU-B6Q"/>
+                                                                        <action selector="phoneButton:" destination="bVM-fg-wSo" eventType="touchUpInside" id="ywS-h8-9VK"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
