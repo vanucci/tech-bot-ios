@@ -6,7 +6,8 @@
 //  Copyright © 2019 peppa. All rights reserved.
 //
 import UIKit
-class TableCell: UITableViewCell {
+import MessageUI
+class TableCell: UITableViewCell, MFMailComposeViewControllerDelegate{
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var numberLbl: UILabel!
     @IBOutlet weak var emailLbl: UILabel!
@@ -19,6 +20,24 @@ class TableCell: UITableViewCell {
             print("Can't place a cell. Need to poo poo")
         }
     }
+    
+    @IBAction func emailButton(_ sender: UIButton) {
+        var mail: MFMailComposeViewController!
+        
+        let toRecipients = ["\(emailLbl.text ?? "No Email")"]
+        let subject = "Subject"
+        let body = ""
+        
+        mail = MFMailComposeViewController()
+        mail.mailComposeDelegate = self
+        mail.setToRecipients(toRecipients)
+        mail.setSubject(subject)
+        mail.setMessageBody(body, isHTML: true)
+        
+//        presentViewController(mail, animated: true, completion: nil)
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -6,8 +6,9 @@
 //  Copyright © 2019 peppa. All rights reserved.
 //
 import UIKit
+import MessageUI
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, MFMailComposeViewControllerDelegate{
     
     @IBOutlet var table: UITableView!
     @IBOutlet var searchBar: UISearchBar!
@@ -21,6 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 //        UIApplication.shared.open(url)
 //
 //   }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -49,16 +51,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     private func setUpCommands() {
-        commandArray.append(Command(name: "AA", number: "12345678901", email: "safd"))
+        commandArray.append(Command(name: "AA", number: "12345678901", email: "No Email"))
         commandArray.append(Command(name: "Accessibility", number: "12345678901", email: "info@test.com"))
         commandArray.append(Command(name: "Ace Email", number: "12345678901", email: "info@test.com"))
         commandArray.append(Command(name: "Ace Fbire", number: "12345678901", email: "ad"))
-        commandArray.append(Command(name: "ARU", number: "12345678901", email: "ad"))
+        commandArray.append(Command(name: "ARU", number: "12345678901", email: "No Email"))
         commandArray.append(Command(name: "Aviva", number: "12345678901", email: "info@test.com"))
         commandArray.append(Command(name: "Avoidables", number: "12345678901", email: "ad"))
-        commandArray.append(Command(name: "Bonus Passowrds", number: "12345678901", email: "ad"))
+        commandArray.append(Command(name: "Bonus Passowrds", number: "12345678901", email: "No Email"))
         commandArray.append(Command(name: "Criticals", number: "12345678901", email: "info@test.com"))
-        commandArray.append(Command(name: "CRT", number: "12345678901", email: "info@test.com"))
+        commandArray.append(Command(name: "CRT", number: "12345678901", email: "No Email"))
         commandArray.append(Command(name: "Fleet", number: "12345678901", email: "info@test.com"))
         commandArray.append(Command(name: "I.T", number: "12345678901", email: "info@test.com"))
         
@@ -83,12 +85,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             cell.nameLbl.text = commandArray[indexPath.row].name
             cell.numberLbl.text = commandArray[indexPath.row].number
             cell.emailLbl.text = commandArray[indexPath.row].email
-            cell.phoneCall.titleLabel?.text = commandArray[indexPath.row].number
+//            cell.phoneCall.titleLabel?.text = commandArray[indexPath.row].number
         case .searchedEntries:
             cell.nameLbl.text = filteredCommandArray[indexPath.row].name
             cell.numberLbl.text = filteredCommandArray[indexPath.row].number
             cell.emailLbl.text = filteredCommandArray[indexPath.row].email
-            cell.phoneCall.titleLabel?.text = commandArray[indexPath.row].number
+//            cell.phoneCall.titleLabel?.text = commandArray[indexPath.row].number
         }
         return cell
     }
