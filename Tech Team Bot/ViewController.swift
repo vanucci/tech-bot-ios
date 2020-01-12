@@ -49,18 +49,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     private func setUpCommands() {
-        commandArray.append(Command(name: "AA", number: "1234", email: "safd"))
-        commandArray.append(Command(name: "Accessibility", number: "01234", email: "info@test.com"))
-        commandArray.append(Command(name: "Ace Email", number: "1234", email: "info@test.com"))
-        commandArray.append(Command(name: "Ace Fbire", number: "1234", email: "ad"))
-        commandArray.append(Command(name: "ARU", number: "1223", email: "ad"))
-        commandArray.append(Command(name: "Aviva", number: "12346", email: "info@test.com"))
-        commandArray.append(Command(name: "Avoidables", number: "1223425", email: "ad"))
-        commandArray.append(Command(name: "Bonus Passowrds", number: "768493873", email: "ad"))
-        commandArray.append(Command(name: "Criticals", number: "923864238765", email: "info@test.com"))
-        commandArray.append(Command(name: "CRT", number: "1329846239586", email: "info@test.com"))
-        commandArray.append(Command(name: "Fleet", number: "123094130948", email: "info@test.com"))
-        commandArray.append(Command(name: "I.T", number: "12343214", email: "info@test.com"))
+        commandArray.append(Command(name: "AA", number: "12345678901", email: "safd"))
+        commandArray.append(Command(name: "Accessibility", number: "12345678901", email: "info@test.com"))
+        commandArray.append(Command(name: "Ace Email", number: "12345678901", email: "info@test.com"))
+        commandArray.append(Command(name: "Ace Fbire", number: "12345678901", email: "ad"))
+        commandArray.append(Command(name: "ARU", number: "12345678901", email: "ad"))
+        commandArray.append(Command(name: "Aviva", number: "12345678901", email: "info@test.com"))
+        commandArray.append(Command(name: "Avoidables", number: "12345678901", email: "ad"))
+        commandArray.append(Command(name: "Bonus Passowrds", number: "12345678901", email: "ad"))
+        commandArray.append(Command(name: "Criticals", number: "12345678901", email: "info@test.com"))
+        commandArray.append(Command(name: "CRT", number: "12345678901", email: "info@test.com"))
+        commandArray.append(Command(name: "Fleet", number: "12345678901", email: "info@test.com"))
+        commandArray.append(Command(name: "I.T", number: "12345678901", email: "info@test.com"))
         
         filteredCommandArray = commandArray
     }
